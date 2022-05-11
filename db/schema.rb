@@ -12,14 +12,15 @@
 
 ActiveRecord::Schema.define(version: 2022_05_10_001443) do
 
-    create_table "owners", force: :cascade do |t|
-        t.string "username"
-        t.string "email"
-        t.string "password_digest"
-    end
+  create_table "owners", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password_digest"
+  end
 
-    create_table "shoes", force: :cascade do |t|
-        t.string "content"
-        t.integer "owner_id"
-    end
+  create_table "shoes", force: :cascade do |t|
+    t.string "footware"
+    t.integer "owner_id"
+  end
+
 end
