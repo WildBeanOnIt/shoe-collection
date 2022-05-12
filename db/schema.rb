@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2022_05_12_015055) do
 
   create_table "shoes", force: :cascade do |t|
     t.string "footware"
+    t.string "condition"
     t.integer "owner_id"
   end
 
