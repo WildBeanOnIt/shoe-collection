@@ -1,4 +1,4 @@
-class CreateShoeController < ActiveRecord::Migration[6.1]
+class CreateShoesController < ActiveRecord::Migration[6.1]
   def change
     create_table :shoes do |t|
       t.string :footware
