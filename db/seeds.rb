@@ -2,7 +2,7 @@
 
 julio = Owner.create(username: "Joker", email: "firstTest@gmail.com", password_digest: "testone")
 lunatwo = Owner.create(username: "LunaTwo", email: "LunaTwo@gmail.com", password_digest: "LunaTesttwo")
-
+Owner.create(username: "Test512", email: "512@test.com", password: "hello")
 # creating shoes info.
 
 Shoe.create(footware: "Nike Dunk Low Panda", owner_id: julio.id)
