@@ -10,6 +10,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
+    @time_of_day = Time.now
     erb :index
   end
 

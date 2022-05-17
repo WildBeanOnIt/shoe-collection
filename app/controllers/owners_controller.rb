@@ -25,6 +25,17 @@ class OwnersController < ApplicationController
         erb :"owners/signup"
     end
 
+    # will add a new user to the database
+    post "/signup" do
+        if params[:username] == "" || params[:email] == "" || params["password"] == ""
+            redirect to "/signup"
+        else
+            @user = Owner.new(:username => params(:username), :email => params(:email), :password => params(:password))
+            @user.save
+            session[:user_id] = @owner.id
+        end
+    end
+
     # get "/user/:id" do
 
     # end
