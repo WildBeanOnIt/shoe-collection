@@ -3,7 +3,7 @@ class CreateShoesTable < ActiveRecord::Migration[6.1]
     create_table :shoes do |t|
       t.string :footware
       t.string :condition
-      t.integer :owner_id
+      t.integer :user_id
     end
   end
 end

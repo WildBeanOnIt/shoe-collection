@@ -7,6 +7,6 @@ end
 # used to send PATCH and DELETE request.
 use Rack::MethodOverride
 
-use OwnersController
+use UsersController
 use ShoesController
 run ApplicationController
